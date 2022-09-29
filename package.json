@@ -9,17 +9,17 @@
     "algoliasearch": "^4.2.0",
     "babel-plugin-styled-components": "^1.10.7",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.20.29",
+    "gatsby": "^4.14.0",
     "gatsby-image": "^2.3.4",
     "gatsby-plugin-algolia-search": "^0.5.7",
     "gatsby-plugin-feed": "^2.4.3",
     "gatsby-plugin-google-analytics": "^2.2.4",
-    "gatsby-plugin-manifest": "^2.3.6",
+    "gatsby-plugin-manifest": "^4.8.0",
     "gatsby-plugin-netlify": "^2.2.3",
-    "gatsby-plugin-netlify-cms": "^4.2.4",
+    "gatsby-plugin-netlify-cms": "^5.0.0",
     "gatsby-plugin-offline": "^3.1.4",
     "gatsby-plugin-react-helmet": "^3.2.4",
-    "gatsby-plugin-sharp": "^2.5.6",
+    "gatsby-plugin-sharp": "^4.23.0",
     "gatsby-plugin-sitemap": "^2.3.5",
     "gatsby-plugin-styled-components": "^3.2.3",
     "gatsby-plugin-transition-link": "^1.18.0",
@@ -27,20 +27,20 @@
     "gatsby-remark-autolink-headers": "^2.2.3",
     "gatsby-remark-copy-linked-files": "^2.2.3",
     "gatsby-remark-external-links": "^0.0.4",
-    "gatsby-remark-images": "^3.2.5",
+    "gatsby-remark-images": "^5.0.0",
     "gatsby-remark-lazy-load": "^1.0.2",
     "gatsby-remark-prismjs": "^3.4.4",
     "gatsby-remark-relative-images-v2": "^0.1.5",
     "gatsby-remark-responsive-iframe": "^2.3.3",
-    "gatsby-source-filesystem": "^2.2.4",
-    "gatsby-transformer-remark": "^2.7.4",
-    "gatsby-transformer-sharp": "^2.4.6",
-    "gatsby-transformer-sqip": "^2.2.6",
-    "gsap": "^3.2.6",
+    "gatsby-source-filesystem": "^4.21.0",
+    "gatsby-transformer-remark": "^4.0.0",
+    "gatsby-transformer-sharp": "^4.8.0",
+    "gatsby-transformer-sqip": "^4.0.0",
+    "gsap": "^3.6.0",
     "lazysizes": "^5.2.1",
     "netlify-cms-app": "^2.12.11",
     "netlify-plugin-gatsby-cache": "^0.2.2",
-    "prismjs": "^1.21.0",
+    "prismjs": "^1.27.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -51,7 +51,8 @@
     "smooth-scroll": "^16.1.3",
     "styled-components": "5.1.0",
     "styled-icons": "^10.2.1",
-    "styled-media-query": "^2.1.2"
+    "styled-media-query": "^2.1.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "prettier": "^2.0.5"
@@ -68,7 +69,9 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -76,5 +79,6 @@
   },
   "bugs": {
     "url": "https://github.com/willianjusten/willianjusten.com.br"
-  }
+  },
+  "snyk": true
 }
